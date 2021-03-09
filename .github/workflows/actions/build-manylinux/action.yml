@@ -4,7 +4,10 @@ runs:
     image: docker://quay.io/pypa/manylinux1_x86_64
     args:
         - .github/workflows/entrypoint.sh
-       
+
+name: Set up QEMU
+ - uses: docker/setup-qemu-action@v1
+
 name: build wheels with manylinux2014 docker images
 runs:
     using: 'docker'
