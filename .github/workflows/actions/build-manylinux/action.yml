@@ -4,3 +4,10 @@ runs:
     image: docker://quay.io/pypa/manylinux1_x86_64
     args:
         - .github/workflows/entrypoint.sh
+       
+name: build wheels with manylinux2014 docker images
+runs:
+    using: 'docker'
+    image: docker://quay.io/pypa/manylinux2014_aarch64
+    args:
+        - .github/workflows/entrypoint.sh
