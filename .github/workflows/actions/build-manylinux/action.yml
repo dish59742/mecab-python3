@@ -1,4 +1,4 @@
-name: build wheels with manylinux docker image
+name: build wheels with manylinux docker images
 runs:
     using: 'docker'
     image: docker://quay.io/pypa/manylinux1_x86_64
